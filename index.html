@@ -9,7 +9,18 @@
         <meta charset="UTF-8"> <!-- Encodage-->
         <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!--Zoom et replisage de l'écran par défaut-->
         <title>Biographie de Victor Hugo</title> <!--Titre de la page et de l'onglet-->
+        <link rel="stylesheet" href="css/resert.css"><!--Réinitialiser les style à 0-->
         <link rel="stylesheet" href="css/style.css"><!--Lien avec la feuille de style-->
+        <!--Insérer les polices d'écritures-->
+        <!--Police n°1 : KREON - regular -->
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Kreon&family=Tilt+Neon&display=swap" rel="stylesheet">
+    
+    
+    
+    
+    
     </head>
     <body>
 
@@ -17,12 +28,12 @@
         <!---HAUT DE LA PAGE--->
         <!--------------------->
 
-        <header> 
-            <img src="images/portrait_victor_hugo.png" title="Portrait de Victor Hugo" alt="Portrait">
-            <h1 class="nom_de_l_auteur">
+        <header class="header"> 
+            <img class="header__portrait" src="images/portrait_victor_hugo.png" title="Portrait de Victor Hugo" alt="Portrait">
+            <h1 class="header__title">
                 Victor Hugo
             </h1>
-            <p class="citation">
+            <p class="header__citation">
                 Citation : Lire, c'est voyager ; voyager, c'est lire
             </p>
         </header>
@@ -31,26 +42,26 @@
         <!--Partie Centrale-->
         <!------------------->
 
-        <main> 
+        <main class="main"> 
 
-            <!-- Partie_resume -->
+            <!-- Partie_resume et dessin -->
 
-            <section class="résumer_plus_dessin">
-                <div class="partie_resume"> 
-                    <div class="partie_resume_titre">
+            <section class="main__1section">
+                <div class="main__1section__resumer"> 
+                    <div class="main__1section__resumer__titre">
                         <img src="images/img_ruban_rouge_titre.png" title="img_ruban_rouge_titre" alt="Photo Ruban rouge">
-                        <p class="paragraphe_pour_titre">
+                        <h2>
                             Résumé
-                        </p>
+                        </h2>
                     </div>
-                    <div class="partie_resume_contenu">
+                    <div class="main__1section__resumer__content"> <!-- Content = Contenu-->
                         <img src="images/Lettrive_V.jpg" title="image_de_letrine_V" alt="Photo de la lettrine">
-                        <p>
+                        <p class="main__1section__resumer__content__biographie_1">
                             ictor Hugo est l'un des plus grands poètes et écrivains français de tous les temps. 
                             Il naît à Besançon et fait ses études à Paris. 
                             Dès 1816, il affirme sa vocation littéraire : "Je veux être Chateaubriand ou rien !"
                         </p>
-                        <p>
+                        <p class="main__1section__resumer__content__biographie_2">
                             Victor Hugo est, à ses débuts, poète et monarchiste. 
                             Mais les événements de 1830 et sa liaison avec Juliette Drouet provoque en lui de profonds changements d'idées et en font le chef de file du mouvement romantique. 
                             Son appartement devient le siège du "Cénacle", regroupant de jeunes auteurs romantiques. 
@@ -67,33 +78,25 @@
                         </p>
                     </div>
                 </div>
-                <div class="partie_dessin">
+                <div class="main__1section__dessin">
                         <img src="images/dessin_ma_destiné.jpg" title="Dessin ma destinée par Victor Hugo" alt="Dessin Ma destinée">
-                    <p>
-                        <span>
-                            Légende
-                        </span>
-                         : Dessin
-                         <span>
-                            La destinée
-                        </span> 
-                         de Victor Hugo
-                    </p>
+                    
+                        <p class="main__1section__dessin__legende">Légende : Dessin<span class="main__1section__dessin__legende--uderline"> &quot;La destinée&quot;</span> de Victor Hugo</p><!--&quot permet d'ajouter des guillement en mode texte-->
                 </div>
             </section>
 
             <!--Livre ouvert (Partie Date Clé + Poème) -->
 
-            <section class="livre_ouvert">
+            <section class="main__livre">
                 <!--Partie Date Clé-->
-                <div class="partie_date_cle">
-                    <div class ="partie_date_cle_en_tete">
+                <div class="main__livre__date_cles">
+                    <div class ="main__livre__date_cles__title">
                         <h2>
                             Dates clés
                         </h2>
                         <img src="images/img_ruban_rouge_titre.png" title="img_ruban_rouge_titre" alt="Photo Ruban rouge">
                     </div>
-                    <div class="partie_date_cle_contenu">
+                    <div class="main__livre__date_cles__content">
                         <ul> <!--Balise Liste et li est élément d'une liste-->
                             <li>26 février 1802 Naissance de Victor Hugo, à Besançon</li>
                             <li>1822 Mariage avec Adèle Foucher</li>
@@ -114,22 +117,18 @@
                     </div>
                 </div>
                 <!--Partie Poème-->
-                <div class="partie_poeme">
-                    <div class="partie_poeme_titre_en_tete">
-                        <div class ="partie_poeme_titre">
-                            <p class="paragraphe_pour_titre">
-                                Poème
-                                <br>
-                                Nuit de Juin
-                            </p>
-                        </div>
-                        <div class ="partie_date_cle_ruban">
-                            <img src="images/img_ruban_rouge_titre.png" title="img_ruban_rouge_titre" alt="Photo Ruban rouge">
-                        </div>
+                <div class="main__livre__poeme">
+                    <div class="main__livre__poeme__title">
+                        <h2>
+                            Poème
+                            <br>
+                            Nuit de Juin
+                        </h2>
+                        <img src="images/img_ruban_rouge_titre.png" title="img_ruban_rouge_titre" alt="Photo Ruban rouge">    
                     </div>
                     
-                    <div class="partie_poeme_contenu">
-                        <p class="paragraphe_poème">
+                    <div class="main__livre__poeme__content">
+                        <p class="main__livre__poeme__content__poème">
                             L'été, lorsque le jour a fui, de fleurs couverte
                             La plaine verse au loin un parfum enivrant ;
                             Les yeux fermés, l'oreille aux rumeurs entrouverte,
@@ -140,11 +139,8 @@
                             Et l'aube douce et pâle, en attendant son heure,
                             Semble toute la nuit errer au bas du ciel.
                         </p>
-                        <p class="paragraphe_poeme_auteur">
-                            Victor Hugo, 
-                            <span>
-                                Les rayons et les ombres
-                            </span>
+                        <p class="main__livre__poeme__content__poeme_auteur">
+                            Victor Hugo, <span class="main__livre__poeme__content__poeme_auteur--uderline">Les rayons et les ombres</span>
                         </p>
                     </div>
                 </div>
@@ -152,20 +148,20 @@
 
             <!-- PARTIE OEUVRES -->
 
-            <section class="partie_img_victor_hugo_debout_plus_oeuvres">
-                <div class="partie_img_victor_hugo_debout">
+            <section class="main__3section">
+                <div class="main__3section__image_victor_hugo">
                     <img src="images/Photo_Victor_Hugo_debout_couleur.png" title="Image de Victor Hugo debout" alt="Photo Victor Hugo debout">
                 </div>
-                <div class="partie_oeuvres">
-                    <div class="partie_oeuvres_en_tete">
+                <div class="main__3section__partie_oeuvres">
+                    <div class="main__3section__partie_oeuvres__title">
                         <img src="images/img_ruban_rouge_titre.png" title="img_ruban_rouge_titre" alt="Photo Ruban rouge">
-                        <p class="paragraphe_pour_titre">
+                        <h2>
                             Oeuvres
-                        </p>
+                        </h2>
                     </div>
                     <!--Partie Catégories-->
-                    <div class="partie_oeuvres_contenu">
-                        <div class="categorie_Romans">
+                    <div class="main__3section__partie_oeuvres__content">
+                        <div class="main__3section__partie_oeuvres__content__categorie_Romans">
                             <img src="images/img_ruban_vert.png" title="ruban vert catégories Romans" alt="">
                             <h2>
                                 Romans
@@ -176,7 +172,7 @@
                                 1869 : L'Homme qui rit
                             </p>
                         </div>
-                        <div class="categorie_theatre">
+                        <div class="main__3section__partie_oeuvres__content__categorie_theatre">
                             <img src="images/img_ruban_jaune.png" title="ruban jaune catégories théâtre" alt="">
                             <h2>
                                 Théâtre
@@ -187,7 +183,7 @@
                                 1838 : Ruy Blas
                             </p>
                         </div>
-                        <div class="categorie_poesie">
+                        <div class="main__3section__partie_oeuvres__content__categorie_poesie">
                             <img src="images/img_ruban_bleu.png" title="ruban bleu catégories poesie" alt="">
                             <h2>
                                 Théâtre
@@ -198,7 +194,7 @@
                                 1856 : Les Contemplations
                             </p>
                         </div>
-                        <div class="categorie_dessin">
+                        <div class="main__3section__partie_oeuvres__content__categorie_dessin">
                             <img src="images/img_ruban_rose.png" title="ruban rose catégories dessin" alt="">
                             <h2>
                                 Théâtre
@@ -215,20 +211,20 @@
         </main>
 
         <!---------->
-        <!--Fotter-->
+        <!--Bas de Page-->
         <!---------->
 
-        <footer>
-            <div class="bouton_footer">
+        <footer class="footer">
+            <div class="footer__bouton_footer">
                 Partager sur les reseaux
             </div>
-            <div class="bouton_footer">
+            <div class="footer__bouton_footer">
                 En savoir plus
             </div>
-            <div class="bouton_footer">
+            <div class="footer__bouton_footer">
                 Nous contacter
             </div>
         </footer>
-        
+
     </body>
 </html>

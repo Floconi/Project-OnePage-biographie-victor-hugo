@@ -1,7 +1,67 @@
+/* Présentation de ma One Page de la Biographie de Victor Hugo */
 /* Document CSS*/
-body {
+/* Si  Difficulté : j'écris en com pour réussir plus facilement la prochaine fois*/
+
+
+
+html {
     background: white;
 }
-nav{
-    background: blue;
+
+
+
+header{
+    background-image: url("../images/photo_arrière_plan_header.jpg") ; /*Difficulté : Pour revenir en arrière dans un fichier on utilise les ..*/
+    opacity:(50%);
+    display: flex;
+
 }
+.header:before{
+
+    content: ' ';    
+    display: block;    
+    position: absolute;    
+    left: 0;    
+    top: 0;    
+    width: 100%;    
+    height: 100%;
+    background-image: url("../images/photo_arrière_plan_header.jpg");
+}
+
+.header__portrait{
+   
+    border : 1px solid #000;
+}
+
+.header__citation{
+    display: flex;
+    float : right;
+    align-items: end;
+    border : 1px solid #000;
+}
+
+h1{
+    display: flex;
+    align-items: center;
+    float: left;
+    font-family: 'Kreon', sans-serif;
+    font-size: 40px;
+    text-transform: uppercase;
+    text-align: center;
+    border : 1px solid #000;
+}
+
+
+main{
+    background-color: #43BE7B ;
+}
+
+
+
+footer{
+    background-color: #D19E63;
+}
+
+
+
+
