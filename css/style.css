@@ -7,38 +7,15 @@
 html {
     background: white;
 }
-
-
-
-header{
-    background-image: url("../images/photo_arrière_plan_header.jpg") ; /*Difficulté : Pour revenir en arrière dans un fichier on utilise les ..*/
-    opacity:(50%);
-    display: flex;
-
-}
-.header:before{
-
-    content: ' ';    
-    display: block;    
-    position: absolute;    
-    left: 0;    
-    top: 0;    
-    width: 100%;    
-    height: 100%;
-    background-image: url("../images/photo_arrière_plan_header.jpg");
+body{
+    width: 100%;
+    max-width: 1500px;
+    align-items: center;
+    margin: auto;
 }
 
-.header__portrait{
-   
-    border : 1px solid #000;
-}
 
-.header__citation{
-    display: flex;
-    float : right;
-    align-items: end;
-    border : 1px solid #000;
-}
+
 
 h1{
     display: flex;
@@ -50,18 +27,338 @@ h1{
     text-align: center;
     border : 1px solid #000;
 }
+h2{
+
+    font-family: 'Macondo Swash Caps', sans-serif;
+    font-size: 35px;
+    
+    
+}
+span{
+    text-decoration: underline;
+    display: inline;
+    border: #000 solid 1px;
+}
+footer span{
+    text-decoration: none;
+}
+li{
+    max-width: 100%;
+}
 
 
+header{
+    background-image: url("../images/photo_arrière_plan_header.jpg") ; /*Difficulté : Pour revenir en arrière dans un fichier on utilise les ..*/
+    display: flex;
+
+}
+
+.header__citation{
+    float : right;
+    align-items: end;
+    border : 1px solid #000;
+    font-family: 'Kreon', sans-serif;
+    font-weight: lighter;
+}
 main{
     background-color: #43BE7B ;
+    padding-left: 35px;
+    padding-right: 35px;
+    padding-top: 50px;
+  }  
+
+.header__portrait{
+   
+    border : 1px solid #000;
 }
+.main__1section{
+    margin-bottom: 67px;
+}
+.main__1section__resumer{
+    background-image: url(../images/Fond_d_ecran_resume.jpg);
+    background-size: cover;
+    padding-left: 61px;
+    padding-right: 20px;
+    width: 906px;
+    display: flex;
+    border: #000 solid 1px;
+    
+
+}
+
+.main__1section__resumer__titre{
+    margin-bottom: 21px;
+}
+
+.main__1section__resumer__titre__ruban{
+    display: flex;
+    width: 115px;
+    height: 147px;
+    border: #000 solid 1px;
+} 
+
+.main__1section__resumer__titre h2{
+    height: 147px;
+    text-align: left;
+    
+}
+
+
+
+.main__1section__resumer__content__Lettrine{
+    width: 139px;
+    height: 144.28px;
+    float: left;
+}
+
+
+.main__1section__resumer__content p{
+
+    font-family: 'Mansalva', sans-serif;
+}
+
+.main__1section__resumer__content__biographie_1{
+    display: flex;
+    padding-left: 10px;
+    height: 144.28px;
+    line-height: 30px;
+    font-size: 20px;
+    text-align: justify;
+    align-items: center;
+}
+.main__1section__resumer__content__biographie_2{
+
+    line-height: 20px;
+    font-size: 20px;
+    text-align: justify;
+   
+}
+
+
+.main__1section__dessin__image{
+
+    width: 100px;
+    height: 200px;
+    border: #000 solid 1px;
+}
+
+
+
+.main__livre__date_cles{
+    background-image: url(../images/Photo_livre_gauche.png);
+    background-repeat: no-repeat;
+    background-size: 100%;
+    padding-left: 87px;
+    display: inline-block;
+    width: 717.13px;
+    height: 1170px;
+    padding-top: 51px;
+    display: flex;
+    flex-direction: column;
+}
+
+
+
+.main__livre__date_cles__title h2{
+    height: 121.16px;
+    display: flex;
+    align-items: center; 
+    justify-content: center; /* Difficulté : aligner un bloc au centre du bloc */
+    text-align: center;
+    
+}
+
+.main__livre__date_cles__title__ruban{
+    display: none;
+}
+
+
+
+.main__livre__date_cles__content{
+    font-family:'Margarine' , sans-serif;
+    font-size: 25px;
+    height: 100%;
+    border-left: 39px;
+    display: flex;
+    align-items: center;
+
+}
+
+.main__livre__poeme{
+    display: inline-block;
+    background-image: url(../images/Photo_livre_droite.png);
+    background-repeat: no-repeat;
+    background-size: 100%;
+    width : 717.13px;
+    height: 1170px;
+    border: #000 solid 1px; 
+    padding-right: 118px;
+
+}
+
+.main__livre__poeme__title{
+    border : red solid 1px;
+}
+.main__livre__poeme__content{
+    font-family: 'Miniver', sans-serif;
+    font-size: 26px;
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    padding-left: 34px;
+    border : pink solid 1px;
+    
+    
+   
+
+}
+.main__livre__poeme__content__poeme_auteur{
+    margin-top: 102px;
+    border :#000 solid 1px;
+    text-align: end;
+    border : blue solid 1px;
+}
+
+
+
+
+/* Partie Photo et oeuvres*/
+
+
+
+.main__3section{
+    margin-top: 127px;
+    display: flex;
+}
+
+
+.main__3section__partie_oeuvres{
+    background-image: url(../images/Fond_d_ecran_resume.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: flex;
+    flex-direction: column;
+    margin-right: 138px ;
+    height: 864.25px;
+    
+}
+.main__3section__partie_oeuvres__content{
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    height: 100%;
+}
+
+
+.main__3section__image_victor_hugo__img{
+    float : left;
+    width: 472px;
+    margin-right: 138px ;
+    display: flex;
+}
+.main__3section__partie_oeuvres__title{
+    display: flex;
+}
+.main__3section__partie_oeuvres__title__ruban{
+    margin-left: 39px;
+    margin-right: 39px;
+    width: 67px;
+    height: 85px;
+}
+.main__3section__partie_oeuvres__title__titre{
+    float: left;
+    width: 100%;
+    height: 85px;
+    display : flex;
+    align-items: center;
+    justify-content: left;
+}
+.h3{
+    color : #fff;
+    font-family: 'Macondo Swash Caps',sans-serif;
+    font-size: 30px;
+    width: 270px;
+    height: 70px;
+    
+}
+
+.main__3section__partie_oeuvres__content__categorie_Romans h3{
+    background-image: url(../images/img_ruban_vert.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    display :  flex;
+    align-items: center;
+    justify-content: center;
+    
+}
+.main__3section__partie_oeuvres__content__categorie_theatre h3{
+    background-image: url(../images/img_ruban_jaune.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    display :  flex;
+    align-items: center;
+    justify-content: center;
+}
+.main__3section__partie_oeuvres__content__categorie_poesie h3{
+    background-image: url(../images/img_ruban_bleu.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    display :  flex;
+    align-items: center;
+    justify-content: center;
+}
+.main__3section__partie_oeuvres__content__categorie_dessin h3{
+    background-image: url(../images/img_ruban_rose.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    display :  flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.texte_categorie{
+    font-family: 'Margarine',sans-serif;
+    font-size: 25px;
+    margin-left: 146px;
+    display : flex;
+    margin-left: 146px ;
+}
+
+
+
+
+
+/* Footer*/
 
 
 
 footer{
     background-color: #D19E63;
+    background-size: cover;
+    font-family: 'Margarine', sans-serif;
+    font-size: 25px;
+    text-transform: uppercase;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-left: 35px;
+    padding-right: 35px;
+    height: 100px;
+    height: 114px;
+    
 }
-
+.footer__bouton_footer{
+    display : flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    border-style: solid;
+    border-color: #000;
+    border-radius: 10%;
+    border-width: 1px;
+    height: 75px;
+}
 
 
 
