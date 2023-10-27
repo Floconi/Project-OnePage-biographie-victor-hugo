@@ -37,7 +37,6 @@ h2{
 span{
     text-decoration: underline;
     display: inline;
-    border: #000 solid 1px;
 }
 footer span{
     text-decoration: none;
@@ -48,17 +47,20 @@ li{
 
 
 header{
-    background-image: url("../images/photo_arrière_plan_header.jpg") ; /*Difficulté : Pour revenir en arrière dans un fichier on utilise les ..*/
+    background-image: url("../images/Fond_ecran_header_transparent.png") ; /*Difficulté : Pour revenir en arrière dans un fichier on utilise les ..*/
     display: flex;
+    justify-content: space-between;
 
 }
 
 .header__citation{
-    float : right;
+    display: flex;
     align-items: end;
+    justify-content: end;
     border : 1px solid #000;
     font-family: 'Kreon', sans-serif;
     font-weight: lighter;
+    
 }
 main{
     background-color: #43BE7B ;
@@ -73,33 +75,53 @@ main{
 }
 .main__1section{
     margin-bottom: 67px;
+    border : blue solid 1px;
+    display :flex;
+    align-items: center;
+    
 }
 .main__1section__resumer{
     background-image: url(../images/Fond_d_ecran_resume.jpg);
     background-size: cover;
     padding-left: 61px;
     padding-right: 20px;
-    width: 906px;
+    width: 60%;
+    height: max-content;
     display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
     border: #000 solid 1px;
+    float: left;
+    
     
 
 }
 
 .main__1section__resumer__titre{
+    display: flex;
+    flex-direction: row;
+    align-items: normal;
+    justify-content: normal;
     margin-bottom: 21px;
+    height: 100%;
+    width: 100%;
+    border:blue 1px solid ;
 }
 
 .main__1section__resumer__titre__ruban{
-    display: flex;
+    
     width: 115px;
     height: 147px;
     border: #000 solid 1px;
 } 
 
 .main__1section__resumer__titre h2{
+    display: flex;
+    align-items: center;
+    justify-content: center;
     height: 147px;
-    text-align: left;
+    text-align: center;
     
 }
 
@@ -118,9 +140,8 @@ main{
 }
 
 .main__1section__resumer__content__biographie_1{
-    display: flex;
     padding-left: 10px;
-    height: 144.28px;
+    height: 100%;
     line-height: 30px;
     font-size: 20px;
     text-align: justify;
@@ -133,31 +154,53 @@ main{
     text-align: justify;
    
 }
-
-
-.main__1section__dessin__image{
-
-    width: 100px;
-    height: 200px;
-    border: #000 solid 1px;
-}
-
-
-
-.main__livre__date_cles{
-    background-image: url(../images/Photo_livre_gauche.png);
-    background-repeat: no-repeat;
-    background-size: 100%;
-    padding-left: 87px;
-    display: inline-block;
-    width: 717.13px;
-    height: 1170px;
-    padding-top: 51px;
+.main__1section__dessin{
     display: flex;
     flex-direction: column;
+    align-items: center;
+    border : red solid 1px;
+    margin-left: auto;
+    margin-right: auto;
 }
 
 
+
+.img{ 
+
+    
+    width: 200px;
+    height: 200px; 
+}
+
+.main__1section__dessin__legende{
+    text-align: center;
+}
+
+.main__livre{
+    border : red solid 1px;
+}
+
+.main__livre__date_cles{
+    background-image: url(../images/Photo_livre_gauche_ordi.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding-left: 87px;
+    width : calc(50% - 60px);
+    min-height: 1170px;
+    height: 100%;
+    padding-top: 51px;
+    border : yellow solid 1px;
+    float: left;
+    display : flex;
+    flex-direction: column;
+
+}
+
+.main__livre__date_cles__title{
+    display: flex;
+    align-items: start;
+    justify-content: start;
+}
 
 .main__livre__date_cles__title h2{
     height: 121.16px;
@@ -165,6 +208,9 @@ main{
     align-items: center; 
     justify-content: center; /* Difficulté : aligner un bloc au centre du bloc */
     text-align: center;
+    border : blueviolet solid 1px;
+    width: 100%;
+    
     
 }
 
@@ -177,41 +223,56 @@ main{
 .main__livre__date_cles__content{
     font-family:'Margarine' , sans-serif;
     font-size: 25px;
-    height: 100%;
-    border-left: 39px;
-    display: flex;
-    align-items: center;
+    margin-left: 30px;
+    border: red solid 1px;
+    display : flex ;
+    margin-top: auto;
+    margin-bottom: auto;
 
 }
 
 .main__livre__poeme{
-    display: inline-block;
-    background-image: url(../images/Photo_livre_droite.png);
+    display: flex;
+    flex-direction: column;
+    background-image: url(../images/Photo_livre_droite_ordi.png);
     background-repeat: no-repeat;
-    background-size: 100%;
-    width : 717.13px;
-    height: 1170px;
+    background-size: cover;
+    padding-right: 87px;
+    width: calc(50%-60px);
+    min-height: 1170px;
+    height: 100%;
+    background-position: right;
     border: #000 solid 1px; 
     padding-right: 118px;
+    padding-top: 51px;
 
 }
 
 .main__livre__poeme__title{
     border : red solid 1px;
+    height: 121.16px;
+    display: flex;
+    align-items: center; 
+    justify-content: center;
+    text-align: center;
+
 }
 .main__livre__poeme__content{
     font-family: 'Miniver', sans-serif;
     font-size: 26px;
-    display: flex;
-    flex-direction: column;
     width: 100%;
+    margin-top: auto;
+    margin-bottom: auto;
     padding-left: 34px;
     border : pink solid 1px;
+}
     
-    
+.main__livre__poeme__title__ruban{
+    display: none;
+}
    
 
-}
+
 .main__livre__poeme__content__poeme_auteur{
     margin-top: 102px;
     border :#000 solid 1px;
@@ -239,7 +300,8 @@ main{
     display: flex;
     flex-direction: column;
     margin-right: 138px ;
-    height: 864.25px;
+    min-height: 864.25px;
+    height: 100%;
     
 }
 .main__3section__partie_oeuvres__content{
@@ -348,6 +410,10 @@ footer{
     height: 114px;
     
 }
+a{
+    color: #000;
+    text-decoration: none;
+}
 .footer__bouton_footer{
     display : flex;
     flex-direction: column;
@@ -355,9 +421,10 @@ footer{
     justify-content: center;
     border-style: solid;
     border-color: #000;
-    border-radius: 10%;
+    border-radius: 10px;
     border-width: 1px;
     height: 75px;
+    
 }
 
 
