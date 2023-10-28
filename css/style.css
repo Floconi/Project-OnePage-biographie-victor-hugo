@@ -48,8 +48,18 @@ li{
 
 header{
     background-image: url("../images/Fond_ecran_header_transparent.png") ; /*Difficulté : Pour revenir en arrière dans un fichier on utilise les ..*/
+    background-repeat: no-repeat;
+    background-size: cover;
     display: flex;
     justify-content: space-between;
+    height: 100%;
+    border: blue solid 1px;
+
+}
+
+.header__titre__citation{
+    display :flex;
+    align-items: center;
 
 }
 
@@ -58,9 +68,16 @@ header{
     align-items: end;
     justify-content: end;
     border : 1px solid #000;
+    font-size: 35px;
     font-family: 'Kreon', sans-serif;
     font-weight: lighter;
+    text-align: center;
+    min-height: 100%;
+}
+.header__titre__citation{
+    display: flex;
     
+
 }
 main{
     background-color: #43BE7B ;
@@ -110,18 +127,18 @@ main{
 }
 
 .main__1section__resumer__titre__ruban{
-    
     width: 115px;
     height: 147px;
-    border: #000 solid 1px;
 } 
 
 .main__1section__resumer__titre h2{
     display: flex;
     align-items: center;
     justify-content: center;
-    height: 147px;
+    min-height: 147px;
+    height: 100%;
     text-align: center;
+    border: violet solid 1px;
     
 }
 
@@ -167,9 +184,10 @@ main{
 
 .img{ 
 
-    
-    width: 200px;
-    height: 200px; 
+    width: 100%;
+    height: 100%;
+    max-width: 200px;
+    max-height: 200px; 
 }
 
 .main__1section__dessin__legende{
@@ -177,8 +195,13 @@ main{
 }
 
 .main__livre{
+    display: flex;
+    height: 100%;
     border : red solid 1px;
+    
+
 }
+
 
 .main__livre__date_cles{
     background-image: url(../images/Photo_livre_gauche_ordi.png);
@@ -194,16 +217,17 @@ main{
     display : flex;
     flex-direction: column;
 
+
 }
 
 .main__livre__date_cles__title{
     display: flex;
     align-items: start;
     justify-content: start;
+    height: 100%;
 }
 
 .main__livre__date_cles__title h2{
-    height: 121.16px;
     display: flex;
     align-items: center; 
     justify-content: center; /* Difficulté : aligner un bloc au centre du bloc */
@@ -300,22 +324,18 @@ main{
     display: flex;
     flex-direction: column;
     margin-right: 138px ;
+    margin-left: 138px;
     min-height: 864.25px;
     height: 100%;
+    width: 100%;
     
-}
-.main__3section__partie_oeuvres__content{
-
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    height: 100%;
 }
 
 
 .main__3section__image_victor_hugo__img{
     float : left;
-    width: 472px;
+    width: 100%;
+    height: 100%;
     margin-right: 138px ;
     display: flex;
 }
@@ -336,12 +356,22 @@ main{
     align-items: center;
     justify-content: left;
 }
+
+.main__3section__partie_oeuvres__content{
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    height: 100%;
+    width: 100%;
+}
+
 .h3{
     color : #fff;
     font-family: 'Macondo Swash Caps',sans-serif;
     font-size: 30px;
-    width: 270px;
-    height: 70px;
+    max-width: 270px;
+    min-height: 70px;
     
 }
 
@@ -427,5 +457,230 @@ a{
     
 }
 
+/* Pour du tablette et du téléphone */
 
 
+/* Téléphone*/
+@media (max-width : 391px){
+    
+    /*PARTIE EN Tête*/
+
+    .header__portrait__img{
+        max-height: 300px;
+        max-width: 196px;
+        height: 100%;
+        width: 100%;
+    }
+    .header__titre__citation{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+        border : violet solid 1px;
+
+    }
+    .header__citation{
+        font-size: 25px;
+        text-align: center;
+        min-height: auto;
+        
+    }
+
+
+    /* Partie main*/
+
+    .main{
+        padding-top: 38px;
+        padding-left: 0px;
+        padding-right: 0px;
+    }
+
+    .main__1section{
+        margin-left: 20px;
+        margin-right: 20px;
+        flex-direction: column;
+
+    }
+    .main__1section__resumer{
+        padding-left: 0px;
+        padding-right: 0px;
+        width: 100%;
+    }
+
+
+    .main__1section__resumer__titre__ruban{
+        width: 79px;
+        height: 101px;
+        
+        
+    }
+    .main__1section__resumer__titre{
+        margin-left: 35px;
+        width: calc(100% - 35px);
+
+    }
+    .main__1section__resumer__titre h2{
+        min-height: 101px;
+        font-size: 30px;
+    }
+
+    .main__1section__resumer__content{
+        padding-left: 20px;
+        padding-right: 20px;
+    }
+    .main__1section__resumer__content__Lettrine{
+        max-width: 108px;
+        max-height: 108px;
+    }
+    .main__1section__resumer__content__biographie_1{
+        padding-left: 5px;
+        font-size: 15px;
+        line-height: 16px;
+    }
+    .main__1section__resumer__content__biographie_2{
+       font-size: 15px;
+       line-height: 18px;
+    }
+
+    .main__1section__dessin{
+        margin-top: 50px;
+    }
+
+    /*Partie livre ouvert*/
+
+    .main__livre{
+        margin-left: 20px;
+        margin-right: 20px;
+        display: flex;
+        flex-direction: column;
+    }
+    .main__livre__date_cles{
+        width : auto;
+        background-position: right;
+        min-height: 518px;
+        padding-top: 0px;
+        padding-left: 10px;
+        padding-bottom: 56px;
+    }
+    .main__livre__date_cles__title{
+        align-items: center;
+    }
+    .main__livre__date_cles__title__ruban{
+        display: flex;
+        max-width: 72px;
+        max-height: 92px;
+    }
+    .main__livre__date_cles__content{
+        font-size: 13px;
+    }
+    .main__livre__poeme{
+        background-position: left;
+        min-height: 518px;
+        padding-top: 0px;
+        padding-right: 20px;
+        padding-left: 15px;
+        padding-bottom: 71px;
+    }
+    .main__livre__poeme__title{
+        display: flex;
+        align-items: center;
+        width: 100%;
+        min-width: 100%;
+        margin-right: 0px;
+
+    }
+    .main__livre__poeme__title h2{
+        font-size: 30px;
+    }
+    .main__livre__poeme__title__ruban{
+        display: flex;
+        max-height: 104px;
+        max-width: 82px;
+    }
+    .main__livre__poeme__content{
+        font-size: 15px;
+        padding-left: 0px;
+    }
+    .main__livre__poeme__content__poeme_auteur{
+        font-size: 15px;
+        
+    }
+
+    /* Partie Oeuvre*/
+
+    .main__3section{
+        padding-right: 20px;
+        justify-content: space-between;
+    }
+
+    .main__3section__image_victor_hugo{
+        display: flex;
+        align-items: center;
+    }
+    .main__3section__image_victor_hugo__img{
+        max-width: 132px;
+        max-height: 337px;
+        margin: 0px;
+    }
+
+    .main__3section__partie_oeuvres{
+        margin: 0px;
+        width: calc(100% - 152px);
+        min-height: auto;
+    }
+    .main__3section__partie_oeuvres__title{
+        margin-left: 11px;
+        border: #000 solid 1px;
+        display: flex;
+        align-items: center;
+    }
+    .main__3section__partie_oeuvres__title__ruban{
+        max-width: 28px;
+        max-height: 36px;
+        margin-right: 0px;
+        margin-left: 0px;
+    }
+    .main__3section__partie_oeuvres__title__titre{
+        align-items: start;
+        font-size: 20px;
+        height: 100%;
+    }
+    .main__3section__partie_oeuvres__content{
+        margin-top: 16px;
+    }
+    .h3{
+        font-size: 20px;
+        max-width: 103px;
+        min-height: 27px;
+
+    }
+    .texte_categorie{
+        margin-left: 33px;
+        font-size: 8px;
+    }
+    .footer {
+        background-color: aqua;
+        height: 80px;
+        padding-right: 20px;
+        padding-left: 20px;
+
+    }
+    .footer__bouton_footer{
+        font-size: 8px;
+        max-height: 27.96px;
+    }
+
+
+
+}
+/* Tablette */
+@media (min-width : 391px) and (max-width: 760px) {
+    .footer{
+        background-color: red;
+    }
+
+
+
+
+
+}
